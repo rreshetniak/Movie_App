@@ -1,0 +1,18 @@
+:root {
+  /* Layout */
+  --container-width: 100%;
+  --container-padding: 24px;
+
+  /* Colors */
+  --dark-blue: #080423;
+  --main-white: #FFFFFF;
+  --rose: #FF3D81;
+  --yellow:#FFD233;
+  --gray: #7A7A7A;
+
+  /* Sizes */
+  --header-height: 80px;
+  --footer-height: 198px;
+
+}
+
