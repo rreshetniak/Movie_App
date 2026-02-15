@@ -21,6 +21,11 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .header,
 .main,
 .footer {
@@ -36,7 +41,7 @@ body {
   flex: 1;
 }
 .container {
-  max-width: 1320px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 60px;
 }
