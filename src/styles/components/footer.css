@@ -1,0 +1,46 @@
+.footer {
+  padding: 28px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer__brand {
+  font-family: 'Bayon';
+  font-size: 40px;
+  letter-spacing: 0.09em;
+  color: var(--rose);
+
+}
+
+.footer__menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  /* color: var(--light-gray);
+  font: inherit; */
+}
+
+.footer__link {
+  color: var(--main-white);
+  font-size: 14px;
+  line-height: 1.2;
+
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+
+
+/* 
+footer {
+  height: 198px;
+  padding: 28px 0;
+} */

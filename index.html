@@ -26,6 +26,226 @@
   </header>
   <main id="app" class="main">
     <div class="container main__container">
+      
+      <div class="home">
+        <!-- HERO -->
+        <section class="home-hero" aria-label="Featured movie">
+          <div class="home-hero__content">
+            <p class="home-hero__label">NOW IN THEATERS</p>
+
+            <h1 class="home-hero__title">Alien: Romulus (2024)</h1>
+
+            <p class="home-hero__text">
+              Exploring an abandoned space station, a research team encounters an unknown lifeform — and the mission turns into a fight for survival.
+            </p>
+
+            <a class="button button--primary" href="#/movie/1">Watch</a>
+          </div>
+
+          <div class="home-hero__media">
+
+            <img
+              class="home-hero__image"
+              src="./src/assets/images/poster.jpg"
+              alt="Alien: Romulus poster"
+            />
+          </div>
+        </section>
+
+        <!-- POPULAR (tabs + grid) -->
+        <section aria-label="Popular content">
+          <div class="home-tabs" role="tablist" aria-label="Popular sections">
+            <button class="tab tab--active" type="button" role="tab" aria-selected="true">
+              Popular Movies
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false">
+              Popular TV Series
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false">
+              Movie Collections
+            </button>
+
+            <a class="home-tabs__more" href="#/movies">See all</a>
+            <!-- here will be svg arrow -->
+          </div>
+
+          <div class="movies-grid">
+            <!-- Card 1 -->
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/278">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="The Shawshank Redemption poster" />
+                <div class="movie-card__title">The Shawshank Redemption</div>
+                <div class="movie-card__rating">9.1</div>
+              </a>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/157336">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Interstellar poster" />
+                <div class="movie-card__title">Interstellar</div>
+                <div class="movie-card__rating">8.6</div>
+              </a>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/550">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Fight Club poster" />
+                <div class="movie-card__title">Fight Club</div>
+                <div class="movie-card__rating">8.8</div>
+              </a>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/680">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Pulp Fiction poster" />
+                <div class="movie-card__title">Pulp Fiction</div>
+                <div class="movie-card__rating">8.9</div>
+              </a>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/13">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Forrest Gump poster" />
+                <div class="movie-card__title">Forrest Gump</div>
+                <div class="movie-card__rating">8.8</div>
+              </a>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/27205">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Inception poster" />
+                <div class="movie-card__title">Inception</div>
+                <div class="movie-card__rating">8.7</div>
+              </a>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/603">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="The Matrix poster" />
+                <div class="movie-card__title">The Matrix</div>
+                <div class="movie-card__rating">8.7</div>
+              </a>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/155">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="The Dark Knight poster" />
+                <div class="movie-card__title">The Dark Knight</div>
+                <div class="movie-card__rating">9.0</div>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <!-- MOVIES BY CATEGORY (pill + filters + grid) -->
+        <section aria-label="Movies by category">
+          <div class="home-tabs">
+            <span class="tab tab--active" aria-hidden="true">Movies by category</span>
+
+            <a class="home-tabs__more" href="#/categories">See all</a>
+          </div>
+
+          <form class="filters" aria-label="Movie filters">
+            <div class="filters__row">
+              <label class="filters__field">
+                <span class="filters__label">Genre</span>
+                <select class="filters__select" name="genre">
+                  <option value="all">All</option>
+                  <option value="horror">Horror</option>
+                  <option value="action">Action</option>
+                  <option value="drama">Drama</option>
+                  <option value="sci-fi">Sci-Fi</option>
+                </select>
+              </label>
+
+              <label class="filters__field">
+                <span class="filters__label">Country</span>
+                <select class="filters__select" name="country">
+                  <option value="all">All</option>
+                  <option value="us">USA</option>
+                  <option value="uk">UK</option>
+                  <option value="de">Germany</option>
+                  <option value="ru">Russia</option>
+                </select>
+              </label>
+
+              <label class="filters__field">
+                <span class="filters__label">Year</span>
+                <select class="filters__select" name="year">
+                  <option value="all">All</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                </select>
+              </label>
+
+              <label class="filters__field">
+                <span class="filters__label">Rating</span>
+                <select class="filters__select" name="rating">
+                  <option value="all">Any</option>
+                  <option value="7">7+</option>
+                  <option value="8">8+</option>
+                  <option value="9">9+</option>
+                </select>
+              </label>
+
+              <label class="filters__field">
+                <span class="filters__label">Language</span>
+                <select class="filters__select" name="language">
+                  <option value="all">All</option>
+                  <option value="en">English</option>
+                  <option value="ru">Russian</option>
+                  <option value="de">German</option>
+                </select>
+              </label>
+            </div>
+          </form>
+
+          <div class="movies-grid">
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/101">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Movie poster" />
+                <div class="movie-card__title">Sample Movie Title</div>
+                <div class="movie-card__rating">8.4</div>
+              </a>
+            </article>
+
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/102">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Movie poster" />
+                <div class="movie-card__title">Sample Movie Title</div>
+                <div class="movie-card__rating">7.9</div>
+              </a>
+            </article>
+
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/103">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Movie poster" />
+                <div class="movie-card__title">Sample Movie Title</div>
+                <div class="movie-card__rating">9.0</div>
+              </a>
+            </article>
+
+            <article class="movie-card">
+              <a class="movie-card__link" href="#/movie/104">
+                <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Movie poster" />
+                <div class="movie-card__title">Sample Movie Title</div>
+                <div class="movie-card__rating">8.1</div>
+              </a>
+            </article>
+          </div>
+        </section>
+      </div>
+
+
 
     </div>
   </main>

@@ -2,4 +2,8 @@
 @import 'variables.css';
 @import 'globals.css';
 @import 'fonts.css';
-@import 'components.css';
+@import 'components/header.css';
+@import 'components/footer.css';
+@import 'components/main_home.css';
+@import 'components/main_card.css';
+@import 'components/main_search.css';
