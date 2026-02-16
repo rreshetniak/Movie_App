@@ -65,8 +65,15 @@
               Movie Collections
             </button>
 
-            <a class="home-tabs__more" href="#/movies">See all</a>
+            
+          </div>
+          <div class="see-all-link">
+            <a class="home-tabs__more" href="#/movies">See all</a>           
             <!-- here will be svg arrow -->
+             <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="-0.5" x2="9.21954" y2="-0.5" transform="matrix(0.650791 0.759257 -0.650791 0.759257 0.650757 0.759277)" stroke="#080423"/>
+              <line y1="-0.5" x2="9.21954" y2="-0.5" transform="matrix(0.650791 -0.759257 0.650791 0.759257 0.650757 14.7593)" stroke="#080423"/>
+            </svg>
           </div>
 
           <div class="movies-grid">
@@ -75,7 +82,11 @@
               <a class="movie-card__link" href="#/movie/278">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="The Shawshank Redemption poster" />
                 <div class="movie-card__title">The Shawshank Redemption</div>
-                <div class="movie-card__rating">9.1</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">9.1/10</div>
+                  
+                </div>
               </a>
             </article>
 
@@ -84,7 +95,11 @@
               <a class="movie-card__link" href="#/movie/157336">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Interstellar poster" />
                 <div class="movie-card__title">Interstellar</div>
-                <div class="movie-card__rating">8.6</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">8.6/10</div>
+                  
+                </div>
               </a>
             </article>
 
@@ -93,7 +108,11 @@
               <a class="movie-card__link" href="#/movie/550">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Fight Club poster" />
                 <div class="movie-card__title">Fight Club</div>
-                <div class="movie-card__rating">8.8</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">8.8/10</div>
+                  
+                </div>
               </a>
             </article>
 
@@ -102,7 +121,11 @@
               <a class="movie-card__link" href="#/movie/680">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Pulp Fiction poster" />
                 <div class="movie-card__title">Pulp Fiction</div>
-                <div class="movie-card__rating">8.9</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">8.9/10</div>
+                  
+                </div>
               </a>
             </article>
 
@@ -111,7 +134,11 @@
               <a class="movie-card__link" href="#/movie/13">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Forrest Gump poster" />
                 <div class="movie-card__title">Forrest Gump</div>
-                <div class="movie-card__rating">8.8</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">8.8/10</div>
+                  
+                </div>
               </a>
             </article>
 
@@ -120,7 +147,11 @@
               <a class="movie-card__link" href="#/movie/27205">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Inception poster" />
                 <div class="movie-card__title">Inception</div>
-                <div class="movie-card__rating">8.7</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">8.7/10</div>
+                  
+                </div>
               </a>
             </article>
 
@@ -129,7 +160,11 @@
               <a class="movie-card__link" href="#/movie/603">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="The Matrix poster" />
                 <div class="movie-card__title">The Matrix</div>
-                <div class="movie-card__rating">8.7</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">8.7/10</div>
+                  
+                </div>
               </a>
             </article>
 
@@ -138,7 +173,11 @@
               <a class="movie-card__link" href="#/movie/155">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="The Dark Knight poster" />
                 <div class="movie-card__title">The Dark Knight</div>
-                <div class="movie-card__rating">9.0</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">9.0/10</div>
+                  
+                </div>
               </a>
             </article>
           </div>
@@ -149,13 +188,13 @@
           <div class="home-tabs">
             <span class="tab tab--active" aria-hidden="true">Movies by category</span>
 
-            <a class="home-tabs__more" href="#/categories">See all</a>
+            <!-- <a class="home-tabs__more" href="#/categories">See all</a> -->
           </div>
 
           <form class="filters" aria-label="Movie filters">
             <div class="filters__row">
               <label class="filters__field">
-                <span class="filters__label">Genre</span>
+                <!-- <span class="filters__label">Genre</span> -->
                 <select class="filters__select" name="genre">
                   <option value="all">All</option>
                   <option value="horror">Horror</option>
@@ -166,7 +205,7 @@
               </label>
 
               <label class="filters__field">
-                <span class="filters__label">Country</span>
+                <!-- <span class="filters__label">Country</span> -->
                 <select class="filters__select" name="country">
                   <option value="all">All</option>
                   <option value="us">USA</option>
@@ -177,7 +216,7 @@
               </label>
 
               <label class="filters__field">
-                <span class="filters__label">Year</span>
+                <!-- <span class="filters__label">Year</span> -->
                 <select class="filters__select" name="year">
                   <option value="all">All</option>
                   <option value="2024">2024</option>
@@ -188,7 +227,7 @@
               </label>
 
               <label class="filters__field">
-                <span class="filters__label">Rating</span>
+                <!-- <span class="filters__label">Rating</span> -->
                 <select class="filters__select" name="rating">
                   <option value="all">Any</option>
                   <option value="7">7+</option>
@@ -198,7 +237,7 @@
               </label>
 
               <label class="filters__field">
-                <span class="filters__label">Language</span>
+                <!-- <span class="filters__label">Language</span> -->
                 <select class="filters__select" name="language">
                   <option value="all">All</option>
                   <option value="en">English</option>
@@ -206,6 +245,29 @@
                   <option value="de">German</option>
                 </select>
               </label>
+              <button class="sort__btn" type="button">
+                <svg width="8" height="31" viewBox="0 0 8 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.03556 0.146444C3.8403 -0.0488167 3.52371 -0.0488167 3.32845 0.146444L0.146471 3.32842C-0.0487908 3.52369 -0.0487907 3.84027 0.146471 4.03553C0.341734 4.2308 0.658316 4.2308 0.853578 4.03553L3.68201 1.20711L6.51043 4.03553C6.70569 4.23079 7.02228 4.23079 7.21754 4.03553C7.4128 3.84027 7.4128 3.52369 7.21754 3.32842L4.03556 0.146444ZM4.18201 30.5L4.18201 0.499998L3.18201 0.499998L3.18201 30.5L4.18201 30.5Z" fill="#7A7A7A"/>
+                </svg>
+              </button>  
+              <button class="sort__btn" type="button">
+                <svg width="8" height="31" viewBox="0 0 8 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.32845 30.3536C3.52372 30.5488 3.8403 30.5488 4.03556 30.3536L7.21754 27.1716C7.4128 26.9763 7.4128 26.6597 7.21754 26.4645C7.02228 26.2692 6.7057 26.2692 6.51043 26.4645L3.68201 29.2929L0.85358 26.4645C0.658318 26.2692 0.341735 26.2692 0.146473 26.4645C-0.0487893 26.6597 -0.0487893 26.9763 0.146473 27.1716L3.32845 30.3536ZM3.18201 0L3.18201 30H4.18201L4.18201 0L3.18201 0Z" fill="#7A7A7A"/>
+                </svg>
+
+              </button>  
+              <!-- <div class="filters__select-updown">
+              </div> -->
+
+              
+            </div>
+            <div class="see-all-link">
+              <a class="home-tabs__more" href="#/movies">See all</a>           
+              <!-- here will be svg arrow -->
+              <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="-0.5" x2="9.21954" y2="-0.5" transform="matrix(0.650791 0.759257 -0.650791 0.759257 0.650757 0.759277)" stroke="#080423"/>
+                <line y1="-0.5" x2="9.21954" y2="-0.5" transform="matrix(0.650791 -0.759257 0.650791 0.759257 0.650757 14.7593)" stroke="#080423"/>
+              </svg>
             </div>
           </form>
 
@@ -214,7 +276,11 @@
               <a class="movie-card__link" href="#/movie/101">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Movie poster" />
                 <div class="movie-card__title">Sample Movie Title</div>
-                <div class="movie-card__rating">8.4</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">8.4/10</div>
+
+                </div>
               </a>
             </article>
 
@@ -222,7 +288,11 @@
               <a class="movie-card__link" href="#/movie/102">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Movie poster" />
                 <div class="movie-card__title">Sample Movie Title</div>
-                <div class="movie-card__rating">7.9</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">7.9/10</div>
+
+                </div>
               </a>
             </article>
 
@@ -230,7 +300,11 @@
               <a class="movie-card__link" href="#/movie/103">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Movie poster" />
                 <div class="movie-card__title">Sample Movie Title</div>
-                <div class="movie-card__rating">9.0</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">9.0/10</div>
+
+                </div>
               </a>
             </article>
 
@@ -238,7 +312,11 @@
               <a class="movie-card__link" href="#/movie/104">
                 <img class="movie-card__img" src="./src/assets/images/film_1.jpg" alt="Movie poster" />
                 <div class="movie-card__title">Sample Movie Title</div>
-                <div class="movie-card__rating">8.1</div>
+                <div class="movie__card-info">
+                  <div class="movie-card__year">1994</div>
+                  <div class="movie-card__rating">8.1/10</div>
+
+                </div>
               </a>
             </article>
           </div>

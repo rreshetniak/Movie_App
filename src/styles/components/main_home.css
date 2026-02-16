@@ -132,6 +132,10 @@
   height: 32px;
   padding: 0 16px;
 
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+
   border-radius: 999px;
   border: 1px solid rgba(11, 19, 32, 0.10);
   background: transparent;
@@ -144,13 +148,21 @@
   cursor: pointer;
 }
 
+.see-all-link {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
 .tab:hover {
-  background: rgba(11, 19, 32, 0.04);
+  background: #474545;
 }
 
 .tab--active {
-  background: #05021a;
-  border-color: #05021a;
+  background: #080423;
+  /* border-color: #080423; */
   color: #ffffff;
 }
 
@@ -210,11 +222,24 @@
   color: rgba(11, 19, 32, 0.88);
 }
 
+.movie__card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .movie-card__rating {
   margin-top: 4px;
   font-size: 12px;
   font-weight: 700;
   color: var(--yellow, #f2c94c);
+}
+
+.movie-card__year {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #151515;
+  opacity: 0.28;
 }
 
 /* =========================
@@ -254,12 +279,19 @@
 
   font: inherit;
   font-size: 12px;
-  color: rgba(11, 19, 32, 0.78);
+  color: #7a7a7a;
 }
 
 .filters__select:focus-visible {
   outline: 2px solid rgba(11, 19, 32, 0.25);
   outline-offset: 2px;
+}
+
+.sort__btn {
+  border: none;
+  background-color: transparent;
+  margin-left: 5px;
+  color: #7a7a7a;
 }
 
 /* =========================
