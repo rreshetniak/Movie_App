@@ -24,15 +24,3 @@ export async function getData (path, query = {}) {
 
   return getDataResponse.json();
 }
-
-// export function getData() {
-
-//   fetch (`${baseUrl}/v1.5/movie`, {
-//     headers: {
-//       'X-API-KEY': `${apiKey}`,
-
-//     }
-//   })
-//     .then(response => response.json())
-//     .then(jsonResult => console.log(jsonResult))
-// }
