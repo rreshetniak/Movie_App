@@ -1,5 +1,7 @@
 import { initHomePage } from "../pages/home/home.controller.js"
 
 export function initApp () {
-  initHomePage();
+  initHomePage().catch((err) => {
+    console.error(err);
+  });
 }

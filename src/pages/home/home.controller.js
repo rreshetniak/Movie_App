@@ -22,7 +22,7 @@ if (movies.length > 0) {
   renderHomeHero(heroEl, movies[0]);
 }
 
-renderHomeMoviesGrid(popularGridEl, movies.slice(0, 8))
-renderHomeMoviesGrid(categoryGridEl, movies.slice(0, 8))
+renderHomeMoviesGrid(popularGridEl, movies.slice(0, 8));
+renderHomeMoviesGrid(categoryGridEl, movies.slice(0, 8));
 
 
